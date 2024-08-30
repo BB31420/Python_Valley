@@ -1,4 +1,4 @@
-# 🌟 Python Valley Study Guide: A Stardew Valley OOP Adventure 🌟
+# 🌟 Python Valley Study Guide: A Stardew Valley OOP Game 🌟
 
 ## The Tale of Farmer Py and the Magic of OOP
 
