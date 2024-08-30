@@ -1,20 +1,20 @@
 # Welcome to Python Valley!
-# This game is inspired by Stardew Valley and teaches you about coding and Object-Oriented Programming (OOP).
-# As you play, you'll learn about classes, objects, methods, and more - just like building your own game!
+# This game teaches you about coding and Object-Oriented Programming (OOP) in a fun way.
+# As you play, you'll learn about classes, objects, methods, and more!
 
 import random
 
-class Farmer:  # We use Farmer instead of Player to match Stardew Valley theme
+class Farmer:
     def __init__(self, name):
-        self.name = name     # Your farmer's name
-        self.energy = 100    # Your energy level - you'll need this for farming!
-        self.gold = 500      # Gold instead of money, just like in Stardew Valley
-        self.backpack = {}   # Your backpack to carry items (it's like your inventory)
+        self.name = name     # The name you choose for your farmer
+        self.energy = 100    # Your energy level - you need this for farming activities!
+        self.gold = 500      # Your in-game currency for buying and selling items
+        self.backpack = {}   # A dictionary to store your items (like an inventory)
 
     def show_status(self):
         print(f"\n{self.name}'s Status:")
         print(f"Energy: {self.energy}")
-        print(f"Gold: {self.gold}G")  # 'G' for gold, like in the game!
+        print(f"Gold: {self.gold}G")  # 'G' stands for gold, our game's currency
 
     # ASSIGNMENT 2 HINT: Upgrade Your Backpack
     # Add methods here to:
@@ -27,10 +27,10 @@ class Farmer:  # We use Farmer instead of Player to match Stardew Valley theme
 
 class Crop:
     def __init__(self, name, growth_time, sell_price):
-        self.name = name                # What kind of crop is it?
-        self.growth_time = growth_time  # How many days does it take to grow?
-        self.sell_price = sell_price    # How much gold do you get when you sell it?
-        self.current_stage = 0          # How grown is it right now?
+        self.name = name                # The name of the crop (e.g., "Parsnip")
+        self.growth_time = growth_time  # How many days it takes to grow
+        self.sell_price = sell_price    # How much gold you get when you sell it
+        self.current_stage = 0          # Keeps track of the crop's growth progress
 
     def grow(self):
         if self.current_stage < self.growth_time:
@@ -51,12 +51,12 @@ class Crop:
 class Farm:
     def __init__(self, size):
         self.size = size
-        self.plots = [[None for _ in range(size)] for _ in range(size)]
+        self.plots = [[None for _ in range(size)] for _ in range(size)]  # Creates a 2D list to represent the farm
 
     def show(self):
         print("\nYour Farm:")
         for row in self.plots:
-            print(" ".join(["[ ]" if plot is None else "[P]" for plot in row]))
+            print(" ".join(["[ ]" if plot is None else "[P]" for plot in row]))  # [ ] for empty, [P] for planted
 
 # ASSIGNMENT 4 HINT: Create Pierre's General Store
 # Create a new Store class here
@@ -78,9 +78,9 @@ class Farm:
 class Game:
     def __init__(self):
         self.farmer = None  # We'll create the farmer when the game starts
-        self.farm = Farm(5) # Create a 5x5 farm
+        self.farm = Farm(5) # Create a 5x5 farm grid
         self.day = 1        # Start on day 1
-        self.season = "spring"  # Start in spring, like Stardew Valley!
+        self.season = "spring"  # Start in spring, like many farming games!
         self.crops = {
             "parsnip": Crop("Parsnip", 4, 35),
             "cauliflower": Crop("Cauliflower", 12, 175),
@@ -193,9 +193,9 @@ class Game:
             print(f"\nDay {self.day} of {self.season}")
             self.farmer.show_status()
             self.farm.show()
-            
+
             action = input("\nWhat do you want to do? (plant/harvest/sleep/quit): ").lower()
-            
+
             if action == "plant":
                 self.plant_crop()
             elif action == "harvest":
