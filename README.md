@@ -1,6 +1,6 @@
 # 🌾 Welcome to Python Valley! 🐔
 
-Hey there, future farmer-coders! Ready to combine the fun of Stardew Valley with the power of Python? Let's grow some code! 🌱💻
+Hey there, farmer-coders! Ready to combine the fun of Stardew Valley with the power of Python? Let's grow some code! 🌱💻
 
 ## 🎮 What's This All About?
 
