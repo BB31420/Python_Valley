@@ -1,6 +1,6 @@
 # Welcome to Python Valley!
-# This game teaches you about coding and Object-Oriented Programming (OOP) in a fun way.
-# As you play, you'll learn about classes, objects, methods, and more!
+# This game is inspired by Stardew Valley and teaches you about coding and Object-Oriented Programming (OOP).
+# As you play, you'll learn about classes, objects, methods, and more - just like building your own game!
 
 import random
 
