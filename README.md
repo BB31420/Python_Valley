@@ -7,7 +7,7 @@ Hey there, farmer-coders! Ready to combine the fun of Stardew Valley with the po
 Python Valley is like Stardew Valley, but instead of using a controller, you're using a keyboard to write code! You'll learn how to:
 
 - Create your own farmer (that's an object!)
-- Plant and harvest crops (using methods!)
+- Plant and harvest crops (using functions!)
 - Manage your backpack (that's like a dictionary!)
 - Deal with weather (if statements are like seasons for your code!)
 
